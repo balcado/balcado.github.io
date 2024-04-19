@@ -1,6 +1,5 @@
-@font-face { font-family: RecVar; font-style: oblique 0deg 15deg; font-weight: 300 1000; src: url('RecVar1085.woff2') format('woff2'); }
-@font-face { font-family: Slkscr; src: url('slkscr.woff2') format('woff2'); }
-:root {h1,h5{
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;600&display=swap");
+h1,h5{
                 text-shadow: 2px 4px 20px rgba(255,255,255,1);
 
 }
@@ -9,13 +8,13 @@ body{
 }
 kp {
   font-size: 16px;
-         font-family: 'RecVar', sans-serif;
+         font-family: 'Oxanium', sans-serif;
 
 }
 
 h4 {
   padding-bottom: 2%;
-             font-family: 'RecVar', sans-serif;
+             font-family: 'Oxanium', sans-serif;
 
 }
 
@@ -36,21 +35,21 @@ color: #19dacb !important;
 
 .header {
   color: white;
-             font-family: 'RecVar', sans-serif;
+             font-family: 'Oxanium', sans-serif;
 
 }
 
 .main {
   padding: 3% 0px 3% 0px;
   margin:  0px 8% 0px 8%;
-             font-family: 'RecVar', sans-serif;
+             font-family: 'Oxanium', sans-serif;
 
 }
 
 /* Info */
 .info {
   background-color: #10181e;
-             font-family: 'RecVar', sans-serif;
+             font-family: 'Oxanium', sans-serif;
 color: white;
 }
 
@@ -60,7 +59,7 @@ color: white;
 
 .about {
   background-color: rgb(244, 244, 244);
-             font-family: 'RecVar', sans-serif;
+             font-family: 'Oxanium', sans-serif;
 
 }
 
@@ -72,12 +71,12 @@ color: white;
 /* Staff */
 .staff {
   background-color: #10181e;
-             font-family: 'RecVar', sans-serif;
+             font-family: 'Oxanium', sans-serif;
 
 }
 .staff h4 {
   background-color: #10181e;
-             font-family: 'RecVar', sans-serif;
+             font-family: 'Oxanium', sans-serif;
 color: white;
 }
 
@@ -99,7 +98,7 @@ color: white;
 
 .vip {
   background-color: rgb(244, 244, 244);
-             font-family: 'RecVar', sans-serif;
+             font-family: 'Oxanium', sans-serif;
 
 }
 
@@ -116,7 +115,7 @@ color: white;
 
   .about, .page-footer {
     text-align: center;
-               font-family: 'RecVar', sans-serif;
+               font-family: 'Oxanium', sans-serif;
 
   }
 
@@ -152,7 +151,7 @@ height: 8%;
 }
 
  .page-footer footer{
-             font-family: 'RecVar', sans-serif;
+             font-family: 'Oxanium', sans-serif;
             background-color: #10181e !important;
 }
 .center{
