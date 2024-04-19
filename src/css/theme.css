@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;600&display=swap");
+h1,h5{
+                text-shadow: 2px 4px 20px rgba(255,255,255,1);
+
+}
+body{
+    overflow-x: hidden;
+}
+kp {
+  font-size: 16px;
+         font-family: 'Oxanium', sans-serif;
+
+}
+
+h4 {
+  padding-bottom: 2%;
+             font-family: 'Oxanium', sans-serif;
+
+}
+
+.navbar-fixed {
+   z-index: 999; 
+}
+
+.row {
+  margin: 0;
+}
+
+.brand-logo {
+  padding-left: 20px !important;
+             font-family: 'Major Mono Display', sans-serif;
+color: #19dacb !important;
+    font-size: 50px !important;
+}
+
+.header {
+  color: white;
+             font-family: 'Oxanium', sans-serif;
+
+}
+
+.main {
+  padding: 3% 0px 3% 0px;
+  margin:  0px 8% 0px 8%;
+             font-family: 'Oxanium', sans-serif;
+
+}
+
+/* Info */
+.info {
+  background-color: #10181e;
+             font-family: 'Oxanium', sans-serif;
+color: white;
+}
+
+.info img {
+  max-width: 25%;
+}
+
+.about {
+  background-color: rgb(244, 244, 244);
+             font-family: 'Oxanium', sans-serif;
+
+}
+
+.about img {
+  max-width: 70%;
+  margin-bottom: -10%;
+}
+
+/* Staff */
+.staff {
+  background-color: #10181e;
+             font-family: 'Oxanium', sans-serif;
+
+}
+.staff h4 {
+  background-color: #10181e;
+             font-family: 'Oxanium', sans-serif;
+color: white;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+
+.staff i {
+  font-size: 25px;
+  margin: 0px .5% 0px .5%;
+
+  color: #212121;
+}
+
+.staff i:hover {
+  color: rgb(70, 70, 70);
+}
+
+.vip {
+  background-color: rgb(244, 244, 244);
+             font-family: 'Oxanium', sans-serif;
+
+}
+
+.screenshots {
+  background-color: #10181e;
+    color: white;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 992px) {
+  .main {
+    padding: 10% 0 10% 0;
+  }
+
+  .about, .page-footer {
+    text-align: center;
+               font-family: 'Oxanium', sans-serif;
+
+  }
+
+  .about img {
+    padding-bottom: 8%;
+  }
+
+  .screenshots .row .col {
+    padding: 2px 2px 2px 2px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact .card-panel {
+    margin: 3% 25% 3% 25%;
+  }
+
+  .screenshots .row:last-child {
+    padding-top: 1.33%;
+  }
+}
+
+/* Transparent Nav Stuff */
+nav {
+    background-color: transparent;
+    -webkit-transition: background-color 1.5s ease-in-out;
+    -moz-transition: background-color 1.5s ease-in-out;
+    -ms-transition: background-color 1.5s ease-in-out;
+    -o-transition: background-color 1.5s ease-in-out;
+    transition: background-color 1.5s ease-in-out;
+           drop-shadow: 0px 20px 10px rgba(255,255,255,1) !important; 
+height: 8%;
+}
+
+ .page-footer footer{
+             font-family: 'Oxanium', sans-serif;
+            background-color: #10181e !important;
+}
+.center{
+ margin-left: 25vw;
+}
+#rest{
+    margin-top: -33px;
+}
+.side-nav#mobile-demo{
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+}
+*:not(.side-nav){
+    transition: 1.5s ease-in-out !important; 
+}
+body::-webkit-scrollbar {
+  width: 0.1rem;
+}
+  body::-webkit-scrollbar-track {
+  background: #10181e;
+}
+  body::-webkit-scrollbar-thumb {
+  background: #19dacb;
+}
+body::-webkit-scrollbar:hover {
+  width: 0.2rem;
+}
+  body::-webkit-scrollbar-track:hover {
+  background: #10181e;
+}
+  body::-webkit-scrollbar-thumb:hover {
+  background: #19dacb;
+}
