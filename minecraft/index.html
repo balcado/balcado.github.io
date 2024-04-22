@@ -596,25 +596,29 @@ Loading ...</div>
   <script>
     $(".button-collapse").sideNav();
   </script>
-   <script>
-    function loadServerInfo(url, containerId) {
-        $.getJSON(url, function(r) {
-            //data is the JSON string
-            if (r.error) {
-                $('#' + containerId).html('Server Offline');
-                return true;
-            }
-            var pl = '';
-            if (r.players.sample.length > 0) {
-                pl = '<br>OP: ' + r.players.sample[0].name;
-            }
-            $('#' + containerId).html('<br><b>Players Online:</b> ' + r.players.online + pl);
-        });
-    }
+<script>
+  function loadServerInfo(url, containerId, callback) {
+      $.getJSON(url, function(r) {
+          //data is the JSON string
+          if (r.error) {
+              $('#' + containerId).html('Server Offline');
+              return true;
+          }
+          var pl = '';
+          if (r.players.sample.length > 0) {
+              pl = '<br>OP: ' + r.players.sample[0].name;
+          }
+          $('#' + containerId).html('<br><b>Players Online:</b> ' + r.players.online + pl);
+          if (callback) callback(); // Call the callback function if provided
+      });
+  }
 
-    loadServerInfo("https://api.minetools.eu/ping/blocksmc.com", "rest1");
-    loadServerInfo("https://api.minetools.eu/ping/mc.hypixel.net", "rest2");
-    loadServerInfo("https://api.minetools.eu/ping/play.smpearth.com", "rest3");
+  // Call the function for each server, using a callback to ensure sequential loading
+  loadServerInfo("https://api.minetools.eu/ping/blocksmc.com", "rest1", function() {
+      loadServerInfo("https://api.minetools.eu/ping/mc.hypixel.net", "rest2", function() {
+          loadServerInfo("https://api.minetools.eu/ping/play.smpearth.com", "rest3");
+      });
+  });
 </script>
 </body>
 
