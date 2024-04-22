@@ -346,7 +346,13 @@ Loading ...</div>
                   </tbody>
                 </table>
                 <br>
-                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/BA6LX2L8AZLB2">Purchase</a>
+                <a class="waves-effect waves-light btn-large grey darken-4"> <script src="https://www.paypal.com/sdk/js?client-id=BAAYLvthc48Nt0vF3lSr-PuLiRbQX-N61aGSaaT_2nTLBlLloaZ4LQS09yfpdUFgHM9AlkPD4LAmpbXHCE&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+                  <div id="paypal-container-HR9N2GYB28DLL"></div>
+                  <script>
+                    paypal.HostedButtons({
+                      hostedButtonId: "HR9N2GYB28DLL",
+                    }).render("#paypal-container-HR9N2GYB28DLL")
+                  </script></a>
               </div>
             </div>
           </div>
