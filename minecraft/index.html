@@ -96,7 +96,7 @@
           <img class="responsive-img" src="../src/img/dirt-icon.png">
           <h4>Survival</h4>
           <i class="chip">
-        <div id="rest">
+        <div id="rest1">
 Loading ...</div>
           </i>
           <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
@@ -107,7 +107,7 @@ Loading ...</div>
           <img class="responsive-img" src="../src/img/stone-icon.png">
           <h4>Creative</h4>
           <i class="chip">
-<div id="rest">
+<div id="rest2">
 Loading ...</div>
           </i>
           <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
@@ -118,7 +118,7 @@ Loading ...</div>
           <img class="responsive-img" src="../src/img/ender-icon.png">
           <h4>SkyBlock</h4>
           <i class="chip">
-<div id="rest">
+<div id="rest3">
 Loading ...</div>
           </i>
           <p>COMING SOON</p>
@@ -590,24 +590,28 @@ Loading ...</div>
   <script>
     $(".button-collapse").sideNav();
   </script>
-    <script>
-        //based on a pen by @robinselmer
-var url = "https://api.minetools.eu/ping/blocksmc.com"; //insert  server here
+   <script>
+    function loadServerInfo(url, containerId) {
+        $.getJSON(url, function(r) {
+            //data is the JSON string
+            if (r.error) {
+                $('#' + containerId).html('Server Offline');
+                return true;
+            }
+            var pl = '';
+            if (r.players.sample.length > 0) {
+                pl = '<br>OP: ' + r.players.sample[0].name;
+            }
+            $('#' + containerId).html('<br><b>Players Online:</b> ' + r.players.online + pl);
+        });
+    }
 
-$.getJSON(url, function(r) {
-  //data is the JSON string
-  if (r.error) {
-    $('#rest').html('Server Offline');
-    return true;
-  }
-  var pl = '';
-  if (r.players.sample.length > 0) {
-    pl = '<br>OP: ' + r.players.sample[0].name;
-  }
-  $('#rest').html('<br><b>Players Online:</b> ' + r.players.online + pl);
-
-});
-    </script>
+    // Call the function with appropriate parameters for each server you want to display
+    loadServerInfo("https://api.minetools.eu/ping/blocksmc.com", "rest1");
+    loadServerInfo("https://api.minetools.eu/ping/mc.hypixel.net", "rest2");
+    loadServerInfo("https://api.minetools.eu/ping/mc.hypixel.net", "rest3");
+    // Add more calls for additional servers if needed
+</script>
 </body>
 
 </html>
