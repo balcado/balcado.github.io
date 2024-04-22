@@ -30,7 +30,7 @@ h4 {
   padding-left: 20px !important;
              font-family: 'Major Mono Display', sans-serif;
 color: #19dacb !important;
-    font-size: 30px !important;
+    font-size: 50px !important;
 }
 
 .header {
@@ -163,6 +163,7 @@ height: 8%;
 .side-nav#mobile-demo{
     background-color: transparent;
     backdrop-filter: blur(8px);
+    width: 40%;
 }
 *:not(.side-nav){
     transition: 1.5s ease-in-out !important; 
