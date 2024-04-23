@@ -33,7 +33,6 @@
   <!-- Theme JS -->
   <script src="../src/js/smoothscroll.js"></script>
   <script src="../src/js/nav.js"></script>
-  <script src="../src/js/script.js"></script>
 
 
   
@@ -106,7 +105,7 @@ Loading ...</div>
           </i>
           <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
             Suspendisse finibus non sem vitae viverra.</p>
-          <button onclick="copyMessage2()" class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;"> <span data-clipboard-text="play.yourip.here" class="coloured" id="copy">play.mcminigames.com</span>
+            <button onclick="copyToClipboard('#connect1')" class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;"><span id="connect1">Connect</span>
             <i class="fa fa-plug fa-1x"></i> </button>
         </div>
         <div class="col l4 s12">
@@ -118,7 +117,7 @@ Loading ...</div>
           </i>
           <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
             Suspendisse finibus non sem vitae viverra.</p>
-          <button  class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;"><span data-clipboard-text="s.balcado.com" class="coloured" id="copy">Connect</span>
+          <button   onclick="copyToClipboard('#connect2')" class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;"><span id="connect2">Connect</span>
             <i class="fa fa-plug fa-1x"></i> </button>
         </div>
         <div class="col l4 s12">
@@ -129,8 +128,8 @@ Loading ...</div>
 Loading ...</div>
           </i>
           <p>COMING SOON</p>
-          <button class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect <i class="fa fa-plug fa-1x"></i> </button>
-        </div>
+          <button onclick="copyToClipboard('#connect3')" class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;"><span id="connect3">Connect</span>
+          </div>
       </div>
     </div>
   </div>
@@ -611,10 +610,8 @@ Loading ...</div>
     });
   </script>
   <!--Clipboard.js-->
-<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
-  <script>
-    new Clipboard('#copy');
-    </script>
+    <script src="../src/js/script.js"></script>
+
 <!-- Mobile Nav INIT -->
   <script>
     $(".button-collapse").sideNav();
