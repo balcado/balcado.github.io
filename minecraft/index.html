@@ -663,7 +663,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.removeChild(tempInput);
 
             // Provide feedback to the user
-            alert("Copied to clipboard: " + textToCopy);
+            alertify.alert("Success!", `${textToCopy} copied to clipboard!`);
         });
     } else {
         console.error("Button not found.");
@@ -695,7 +695,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.removeChild(tempInput);
 
             // Provide feedback to the user
-            alert("Copied to clipboard: " + textToCopy);
+            alertify.alert("Success!", `${textToCopy} copied to clipboard!`);
         });
     } else {
         console.error("Button not found.");
@@ -727,7 +727,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.removeChild(tempInput);
 
             // Provide feedback to the user
-            alertify.alert("Success!", `${message} copied to clipboard!`);
+            alertify.alert("Success!", `${textToCopy} copied to clipboard!`);
         });
     } else {
         console.error("Button not found.");
