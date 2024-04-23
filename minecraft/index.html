@@ -638,27 +638,16 @@ Loading ...</div>
     <script>
 document.getElementById("copyButton").addEventListener("click", function() {
     var textToCopy = "s.minecraft.com";
-    
-    // Create a temporary textarea element to hold the text to be copied
-    var textarea = document.createElement("textarea");
-    textarea.value = textToCopy;
-    textarea.style.position = "fixed";  // Ensure it's off-screen
-    document.body.appendChild(textarea);
-    
-    // Select the text in the textarea
-    textarea.select();
-    textarea.setSelectionRange(0, textToCopy.length); // For mobile devices
-    
-    // Copy the selected text to the clipboard
-    document.execCommand("copy");
-    
-    // Remove the temporary textarea
-    document.body.removeChild(textarea);
-    
-    // Optionally, provide some feedback to the user
-    alert("Copied to clipboard: " + textToCopy);
-});
 
+    // Create a new clipboard item
+    navigator.clipboard.writeText(textToCopy)
+        .then(function() {
+            alert("Copied to clipboard: " + textToCopy);
+        })
+        .catch(function(error) {
+            console.error("Unable to copy to clipboard: ", error);
+        });
+});
 
     </script>
 
