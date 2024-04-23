@@ -104,7 +104,8 @@ Loading ...</div>
           </i>
           <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
             Suspendisse finibus non sem vitae viverra.</p>
-          <button onclick="copyButton" class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect <i class="fa fa-plug fa-1x"></i> </button>
+            <button id="copyButton">Connect</button>
+
         </div>
         <div class="col l4 s12">
           <img class="responsive-img" src="../src/img/stone-icon.png">
@@ -636,19 +637,38 @@ Loading ...</div>
   });
 </script>
     <script>
-document.getElementById("copyButton").addEventListener("click", function() {
-    var textToCopy = "s.minecraft.com";
+// Wait for the DOM content to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the button element
+    var copyButton = document.getElementById("copyButton");
+    
+    // Check if the button exists
+    if (copyButton) {
+        // Add click event listener to the button
+        copyButton.addEventListener("click", function() {
+            var textToCopy = "s.minecraft.com";
 
-    // Create a new clipboard item
-    navigator.clipboard.writeText(textToCopy)
-        .then(function() {
+            // Create a temporary element to hold the text to be copied
+            var tempInput = document.createElement("input");
+            tempInput.setAttribute("value", textToCopy);
+            document.body.appendChild(tempInput);
+
+            // Select the text
+            tempInput.select();
+
+            // Copy the selected text to the clipboard
+            document.execCommand("copy");
+
+            // Remove the temporary element
+            document.body.removeChild(tempInput);
+
+            // Provide feedback to the user
             alert("Copied to clipboard: " + textToCopy);
-        })
-        .catch(function(error) {
-            console.error("Unable to copy to clipboard: ", error);
         });
+    } else {
+        console.error("Button not found.");
+    }
 });
-
     </script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
