@@ -1,9 +1,25 @@
-/* Listenner and Transparency Applicator */
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 50)  {
-    $('nav').css('background','#10181e');
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop >= 50 && scrollTop < 2500) {
+      var blurValue = Math.min(8 + scrollTop / 200, 50); // Adjust the blur value from 8px to 50px
+      $('nav').css({
+        'background': '#10181e',
+        '-webkit-backdrop-filter': 'blur(' + blurValue + 'px)',
+        'backdrop-filter': 'blur(' + blurValue + 'px)'
+      });
+    } else if (scrollTop >= 2500) {
+      var blurValue = Math.max(50 - (scrollTop - 2500) / 100, 8); // Adjust the blur value from 50px to 8px
+      $('nav').css({
+        'background': 'transparent',
+        '-webkit-backdrop-filter': 'blur(' + blurValue + 'px)',
+        'backdrop-filter': 'blur(' + blurValue + 'px)'
+      });
     } else {
-    $('nav').css('background','transparent');
+      $('nav').css({
+        'background': 'transparent',
+        '-webkit-backdrop-filter': 'blur(8px)',
+        'backdrop-filter': 'blur(8px)'
+      });
     }
-    });
-    
+  });
