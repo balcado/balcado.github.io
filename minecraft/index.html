@@ -104,7 +104,8 @@ Loading ...</div>
           </i>
           <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
             Suspendisse finibus non sem vitae viverra.</p>
-          <button onclick="copyMessage2()" class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect <i class="fa fa-plug fa-1x"></i> </button>
+          <button onclick="copyMessage2()" class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;"> <span data-clipboard-text="play.yourip.here" class="coloured" id="copy"><span style="opacity: 1;">play.mcminigames.com </span></span>
+            <i class="fa fa-plug fa-1x"></i> </button>
         </div>
         <div class="col l4 s12">
           <img class="responsive-img" src="../src/img/stone-icon.png">
@@ -606,8 +607,13 @@ Loading ...</div>
       // disable: 'mobile',
     });
   </script>
-
-  <!-- Mobile Nav INIT -->
+<!--Clipboard.js-->
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+  
+<script>
+  new Clipboard('#copy');
+  </script>
+<!-- Mobile Nav INIT -->
   <script>
     $(".button-collapse").sideNav();
   </script>
@@ -636,18 +642,6 @@ Loading ...</div>
   });
 </script>
     <script>
-        function copyMessage {
- 
-
-    var message = `evolution.minecra.fr`;
-
-    navigator.clipboard.writeText(message).then(function() {
-        alertify.alert("Success!", `${message} copied to clipboard!`, function(){});
-    }).catch(function(err) {
-        console.error('Unable to copy message to clipboard', err);
-        alertify.alert("Error!", "Error copying message to clipboard. Please try again.", function(){});
-    });
-}
 
 
 
