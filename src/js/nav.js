@@ -1,4 +1,4 @@
-<script>
+
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
 
@@ -24,4 +24,4 @@
       });
     }
   });
-</script>
+
