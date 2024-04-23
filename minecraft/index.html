@@ -21,6 +21,8 @@
   <!-- AOS -->
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<!-- Alertify -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css">
 
   <!-- MC Player Counter -->
   <script src="https://cdn.rawgit.com/leonardosnt/mc-player-counter/1.1.0/dist/mc-player-counter.min.js"></script>
@@ -31,6 +33,7 @@
   <!-- Theme JS -->
   <script src="../src/js/smoothscroll.js"></script>
   <script src="../src/js/nav.js"></script>
+  <script src="../src/js/script.js"></script>
 
   <!-- Site Title -->
   <title>Evolution ⛏</title>
@@ -39,17 +42,17 @@
   <meta charset="UTF-8">
   <meta name="author" content="7TE &amp; Z_Maro">
   <meta name="description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft.">
-  <meta name="keywords" content="Minecraft, Server, Balcado, Multiplayer">
+  <meta name="keywords" content="Minecraft, Server, Balcado, Multiplayer, yeah">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Balcado ⛏" />
   <meta name="description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft." />
-  <link rel="icon" type="image/png" href="../src/img/balcado.png" sizes="64x64">
+  <link rel="icon" type="image/png" href="../src/img/logo3.png" sizes="64x64">
 </head>
 
 <body>
 
   <!-- Nav -->
-  <div class="header" style="background: url('../src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
+  <div class="header" style="background:  url('../src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
     <div class="navbar-fixed">
       <nav class="z-depth-0">
         <div class="nav-wrapper">
@@ -79,9 +82,9 @@
 
     </div>
     <div class="header-content center-align" data-aos="fade">
-      <h1 style="padding-top: 6%;">Welcome to Balcado²</h1>
+      <h1 style="padding-top: 6%;">Welcome to <span style="font-family: Major Mono Display;">EVOLUTION  </span> </h1>
       <h5 style="">Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft.</h5>
-      <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m2 4v4h4v2H8v6h2v-2h4v2h2v-6h-2v-2h4V6h-4v4h-4V6z"/></svg></a>
+      <a  class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m2 4v4h4v2H8v6h2v-2h4v2h2v-6h-2v-2h4V6h-4v4h-4V6z"/></svg></a>
       <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="currentColor" d="M18.926 23.998L0 18.892L5.075.002L24 5.108ZM15.348 10.09l-5.282-1.453l-1.414 5.273l5.282 1.453z"/></svg></a>
       <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3h7.5L15 7h-3v3h3v3.5h-3V20l-4 1z"/></svg></a>
     </div>
@@ -96,33 +99,33 @@
           <img class="responsive-img" src="../src/img/dirt-icon.png">
           <h4>Survival</h4>
           <i class="chip">
-        <div id="rest">
+        <div id="rest1">
 Loading ...</div>
           </i>
           <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
             Suspendisse finibus non sem vitae viverra.</p>
-          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect</a>
+          <button onclick="copyMessage2()" class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect <i class="fa fa-plug fa-1x"></i> </button>
         </div>
         <div class="col l4 s12">
           <img class="responsive-img" src="../src/img/stone-icon.png">
           <h4>Creative</h4>
           <i class="chip">
-<div id="rest">
+<div id="rest2">
 Loading ...</div>
           </i>
           <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
             Suspendisse finibus non sem vitae viverra.</p>
-          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect</a>
+          <button  class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect <i class="fa fa-plug fa-1x"></i> </button>
         </div>
         <div class="col l4 s12">
           <img class="responsive-img" src="../src/img/ender-icon.png">
           <h4>SkyBlock</h4>
           <i class="chip">
-<div id="rest">
+<div id="rest3">
 Loading ...</div>
           </i>
           <p>COMING SOON</p>
-          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect</a>
+          <button class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect <i class="fa fa-plug fa-1x"></i> </button>
         </div>
       </div>
     </div>
@@ -234,7 +237,7 @@ Loading ...</div>
           <div class="row">
             <div class="col s12">
               <blockquote style="margin: 0% 8% 0% 8%;">
-               ass
+               Hey, I'm Asser! I've got big dreams of becoming a professional VALORANT player one day. Right now, I might be Iron 2, but everyone starts somewhere , right? Besides VALORANT, I enjoy playing Minecraft. I used to be heavily involved with this server, even a right hand for a while, but i decided to step away for no particular reason. Now I'm back as a moderator, playing an important role in this community.
               </blockquote>
             </div>
           </div>
@@ -315,38 +318,42 @@ Loading ...</div>
     <div class="main">
       <div class="row" data-aos="fade-down">
         <div class="col s12">
-          <h4>Donate to help the server.</h4>
+          <h4>Purchase ranks here!</h4>
         </div>
       </div>
       <div class="row">
         <div class="col s12 l3" data-aos="fade-right">
           <div class="card-panel">
             <div class="row">
-              <div class="col s12">
+              <div class="col s12" style="height: 10% !important;">
+              
+                  
                 <h5>Supporter 🙂</h5>
                 <span>💲5  </span>
+                  
                 <br><br>
                 <table class="centered responsive-table striped">
                   <tbody>
                     <tr>
-                      <td>Perk 1</td>
-                    </tr>
-                    <tr>
                       <td>10 drachmas a week</td>
                     </tr>
                     <tr>
-                      <td>Perk 3</td>
+                      <td>Exclusive supporter tag in chat and on forums</td>
                     </tr>
                     <tr>
-                      <td>Perk 4</td>
+                      <td> Access to /nick command to change your in-game nickname</td>
                     </tr>
                     <tr>
-                      <td>Perk 5</td>
+                      <td>Priority queue access during peak times</td>
+                    </tr>
+                    <tr>
+                      <td> Early access to new features and updates</td>
                     </tr>
                   </tbody>
                 </table>
                 <br>
-                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/BA6LX2L8AZLB2">Donate</a>
+                             <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/BA6LX2L8AZLB2">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
+
               </div>
             </div>
           </div>
@@ -355,30 +362,44 @@ Loading ...</div>
           <div class="card-panel">
             <div class="row">
               <div class="col s12">
+                           <!-- <script src="https://www.paypal.com/sdk/js?client-id=BAAYLvthc48Nt0vF3lSr-PuLiRbQX-N61aGSaaT_2nTLBlLloaZ4LQS09yfpdUFgHM9AlkPD4LAmpbXHCE&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+   
+                  <div id="paypal-container-HR9N2GYB28DLM"></div>
+                   <script>   
+                    paypal.HostedButtons({
+                      hostedButtonId: "HR9N2GYB28DLM",
+                    }).render("#paypal-container-HR9N2GYB28DLM")
+                  </script> -->
+                  
                 <h5>Backer 😄</h5>
                 <span>💲10 USD </span>
+                  
                 <br><br>
                 <table class="centered responsive-table striped">
                   <tbody>
                     <tr>
-                      <td>Perk 1</td>
+                      <td>20 drachmas a week (Includes Supporter perks)</td>
                     </tr>
                     <tr>
-                      <td>20 drachmas a week</td>
+                      <td> Custom prefix and suffix for your in-game name</td>
                     </tr>
                     <tr>
-                      <td>Perk 3</td>
+                      <td>Ability to set a home in one additional location</td>
                     </tr>
                     <tr>
-                      <td>Perk 4</td>
+                      <td>Access to a private Backer Discord channel for sneak peeks and discussions</td>
                     </tr>
                     <tr>
-                      <td>Perk 5</td>
+                      <td>Monthly Backer-exclusive events with special rewards</td>
                     </tr>
                   </tbody>
                 </table>
                 <br>
-                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/LBFYNT4AV4TMU">Donate</a>
+     
+                    
+                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/LBFYNT4AV4TMU">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
+                  
+                  
               </div>
             </div>
           </div>
@@ -393,24 +414,24 @@ Loading ...</div>
                 <table class="centered responsive-table striped">
                   <tbody>
                     <tr>
-                      <td>Perk 1</td>
+                      <td>30 drachmas a week (Includes Supporter and Backer perks)</td>
                     </tr>
                     <tr>
-                      <td>30 drachmas a week</td>
+                      <td>Exclusive Benefactor cosmetic item (such as a cape or hat)</td>
                     </tr>
                     <tr>
-                      <td>Perk 3</td>
+                      <td> Increased daily claim block limit in the survival world</td>
                     </tr>
                     <tr>
-                      <td>Perk 4</td>
+                      <td>Ability to fly in your own claimed land</td>
                     </tr>
                     <tr>
-                      <td>Perk 5</td>
+                      <td>Quarterly Benefactor-only build competitions with substantial prizes</td>
                     </tr>
                   </tbody>
                 </table>
                 <br>
-                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/TRWQVWJX8KJNE">Donate</a>
+                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/TRWQVWJX8KJNE">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
               </div>
             </div>
           </div>
@@ -425,24 +446,24 @@ Loading ...</div>
                 <table class="centered responsive-table striped">
                   <tbody>
                     <tr>
-                      <td>Perk 1</td>
+                      <td>100 drachmas a week (Includes Supporter, Backer, and Benefactor perks)</td>
                     </tr>
                     <tr>
-                      <td>100 drachmas a week</td>
+                      <td>Unique Enthusiast particle effects for your character</td>
                     </tr>
                     <tr>
-                      <td>Perk 3</td>
+                      <td>Access to a private Enthusiast Discord server for direct communication with staff</td>
                     </tr>
                     <tr>
-                      <td>Perk 4</td>
+                      <td>Monthly Enthusiast-only Q&A sessions with server developers</td>
                     </tr>
                     <tr>
-                      <td>Perk 5</td>
+                      <td>Custom Enthusiast statue or monument built in the spawn area, showcasing your username and contributions</td>
                     </tr>
                   </tbody>
                 </table>
                 <br>
-                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/TGLAQTWGYCNL6">Donate</a>
+                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/TGLAQTWGYCNL6">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
               </div>
             </div>
           </div>
@@ -512,16 +533,16 @@ Loading ...</div>
   <div class="contact" id="contact" style="background: url('../src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
     <div class="main">
       <div class="card-panel" data-aos="fade-up" style=" background-color: rgba(255,255,255,0.1) !important; backdrop-filter: blur(8px) !important; ">
-        <h4 style="color: white;" class="center-align">Contact Us</h4>
+        <h4 style="color: white;" class="center-align">Contact Us?</h4>
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6" >
               <input style="color: white;"  type="text" class="form-control" id="name" name="name" placeholder="Name" required />
-              <label  for="name"><b>Name</b></label>
+              <label  style="color: white;"  for="name"><b>Name <i class="fa fa-user fa-1x"></i></b></label>
             </div>
             <div class="input-field col s6">
               <input style="color: white;"  type="text" class="form-control" id="email" name="email" placeholder="Email"  required />
-              <label  for="email"><b>Email</b></label>
+              <label  style="color: white;" for="email"><b>Email <i class="fa fa-envelope fa-1x"></i></b></label>
             </div>
           </div>
           <div class="row">
@@ -529,7 +550,7 @@ Loading ...</div>
               <div class="row">
                 <div class="input-field col s12">
                   <textarea style="color: white;"  id="message" class="materialize-textarea"></textarea>
-                  <label  for="message"><b>Your Message</b></label>
+                  <label style="color: white;"  for="message"><b>Your Message <i class="fa fa-message fa-1x"></i></b></label>
                 </div>
               </div>
               <div>
@@ -590,24 +611,50 @@ Loading ...</div>
   <script>
     $(".button-collapse").sideNav();
   </script>
+<script>
+  function loadServerInfo(url, containerId, callback) {
+      $.getJSON(url, function(r) {
+          //data is the JSON string
+          if (r.error) {
+              $('#' + containerId).html('Server Offline');
+              return true;
+          }
+          var pl = '';
+          if (r.players.sample.length > 0) {
+              pl = '<br>OP: ' + r.players.sample[0].name;
+          }
+          $('#' + containerId).html('<br><b>Players Online:</b> ' + r.players.online + pl);
+          if (callback) callback(); // Call the callback function if provided
+      });
+  }
+
+  // Call the function for each server, using a callback to ensure sequential loading
+  loadServerInfo("https://api.minetools.eu/ping/blocksmc.com", "rest1", function() {
+      loadServerInfo("https://api.minetools.eu/ping/mc.hypixel.net", "rest2", function() {
+          loadServerInfo("https://api.minetools.eu/ping/play.smpearth.com", "rest3");
+      });
+  });
+</script>
     <script>
-        //based on a pen by @robinselmer
-var url = "https://api.minetools.eu/ping/blocksmc.com"; //insert  server here
+        function copyMessage {
+ 
 
-$.getJSON(url, function(r) {
-  //data is the JSON string
-  if (r.error) {
-    $('#rest').html('Server Offline');
-    return true;
-  }
-  var pl = '';
-  if (r.players.sample.length > 0) {
-    pl = '<br>OP: ' + r.players.sample[0].name;
-  }
-  $('#rest').html('<br><b>Players Online:</b> ' + r.players.online + pl);
+    var message = `evolution.minecra.fr`;
 
-});
+    navigator.clipboard.writeText(message).then(function() {
+        alertify.alert("Success!", `${message} copied to clipboard!`, function(){});
+    }).catch(function(err) {
+        console.error('Unable to copy message to clipboard', err);
+        alertify.alert("Error!", "Error copying message to clipboard. Please try again.", function(){});
+    });
+}
+
+
+
     </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+
 </body>
 
 </html>
