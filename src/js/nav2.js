@@ -3,7 +3,7 @@
     var scrollTop = $(window).scrollTop();
 
     if (scrollTop >= 500 && scrollTop < 3000) {
-      var blurValue = Math.min(8 + (scrollTop - 500) / 100, 20; // Adjust the blur value from 8px to 50px
+      var blurValue = Math.min(8 + (scrollTop - 500) / 100, 20); // Adjust the blur value from 8px to 50px
       $('nav').css({
         'background': '#10181e',
         '-webkit-backdrop-filter': 'blur(' + blurValue + 'px)',
