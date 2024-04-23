@@ -32,7 +32,7 @@
 
   <!-- Theme JS -->
   <script src="../src/js/smoothscroll.js"></script>
-  <script src="../src/js/nav.js"></script>
+  <script src="../src/js/nav2.js"></script>
   <script src="../src/js/script.js"></script>
 
   <!-- Site Title -->
@@ -710,7 +710,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (copyButton) {
         // Add click event listener to the button
         copyButton.addEventListener("click", function() {
-            var textToCopy = "sk.balcado.com";
+            var textToCopy = "sk..com";
 
             // Create a temporary element to hold the text to be copied
             var tempInput = document.createElement("input");
@@ -727,7 +727,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.removeChild(tempInput);
 
             // Provide feedback to the user
-            alert("Copied to clipboard: " + textToCopy);
+            alertify.alert("Success!", `${message} copied to clipboard!`);
         });
     } else {
         console.error("Button not found.");
