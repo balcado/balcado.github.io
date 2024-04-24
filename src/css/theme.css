@@ -72,14 +72,14 @@ color: white;
 
 /* Staff */
 .staff {
-  background-color: #10181e;
+  background-color: #ebf3fb;
              font-family: 'Oxanium', sans-serif;
 
 }
 .staff h4 {
-  background-color: #10181e;
+  background-color: #ebf3fb;
              font-family: 'Oxanium', sans-serif;
-color: white;
+color: black;
 }
 
 .no-padding {
@@ -91,7 +91,7 @@ color: white;
   font-size: 25px;
   margin: 0px .5% 0px .5%;
 
-  color: #212121;
+  color: #fff;
 }
 
 .staff i:hover {
@@ -99,14 +99,14 @@ color: white;
 }
 
 .vip {
-  background-color: rgb(244, 244, 244);
+  background-color: rgb(16,24,30);
              font-family: 'Oxanium', sans-serif;
 
 }
 
 .screenshots {
-  background-color: #10181e;
-    color: white;
+  background-color: #ebf3fb;
+    color: black;
 }
 
 /* Responsiveness */
