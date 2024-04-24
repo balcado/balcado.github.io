@@ -702,6 +702,16 @@ header h1 {
                 </td>
         </div>
                     </tr>
+                    <tr>
+                      <td>
+                        <div class="user-info">
+                          <p>Users Registered: <span id="usersRegistered">0</span></p>
+                          <p>Online Guests: <span id="onlineGuests">0</span></p>
+                          <p>Latest Member: <span id="latestMember">None</span></p>
+                      </div>
+                      
+                      </td>
+                    </tr>
                     </div>
                 </table>
     </div>
@@ -776,7 +786,27 @@ header h1 {
     </div>
   </footer>
   <!-- /Footer -->
+<script>
+  // Function to fetch and update user-related information
+function updateUserInformation() {
+    // Simulate fetching user information from server/database
+    const usersRegistered = Math.floor(Math.random() * 1000); // Simulated number of registered users
+    const onlineGuests = Math.floor(Math.random() * 100); // Simulated number of online guests
+    const latestMember = "User" + Math.floor(Math.random() * 1000); // Simulated latest member username
 
+    // Update HTML elements with fetched information
+    document.getElementById("usersRegistered").textContent = usersRegistered;
+    document.getElementById("onlineGuests").textContent = onlineGuests;
+    document.getElementById("latestMember").textContent = latestMember;
+}
+
+// Call the function initially to update user information when the page loads
+updateUserInformation();
+
+// Set interval to update user information every 10 seconds (adjust as needed)
+setInterval(updateUserInformation, 10000); // 10000 milliseconds = 10 seconds
+
+</script>
   <!-- AOS INIT -->
   <script>
     AOS.init({
