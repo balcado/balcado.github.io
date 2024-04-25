@@ -1,8 +1,12 @@
 const counters = document.querySelectorAll('.counter');
-const speed = 1000; // The lower the slower
+Math.trunc(document.querySelectorAll('.counter'));
 
+const speed = 1000; 
+ // The lower the slower
 counters.forEach(counter => {
+    
 	const updateCount = () => {
+
 		const target = +counter.getAttribute('data-target');
 		const count = +counter.innerText;
 
@@ -17,11 +21,27 @@ counters.forEach(counter => {
 			// Add inc to count and output in counter
 			counter.innerText = count + inc;
 			// Call function every ms
-			setTimeout(updateCount, 1);
+			setInterval(updateCount, speed);
+            Math.trunc(counter.innerText);
 		} else {
 			counter.innerText = target;
 		}
 	};
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    
+    if (scrollTop >= 500 && scrollTop < 3000) {
 
-	updateCount();
+    } 
+        else if (scrollTop >= 3000) {
+            
+            Math.trunc(updateCount());
+        } 
+            else {
+                        
+            }
+    
+  });
+  
+  
 });

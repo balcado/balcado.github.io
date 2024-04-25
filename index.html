@@ -41,20 +41,74 @@
   <meta name="description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft.">
   <meta name="keywords" content="Minecraft, Server, Balcado, Multiplayer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Balcado ⛏" />
-  <meta name="description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft." />
+    <meta name="title" content="Balcado 🎮" />
+  <meta name="description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of gaming™" />
   <link rel="icon" type="image/png" href="./src/img/balcado.png" sizes="128x128">
 </head>
 
 <body>
+ <style>
+     .loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: transparent;
+         animation: blur 4s ease-in-out;
+                overflow: hidden;            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        background-repeat: no-repeat;
+    }
 
+        .content:not(.side-nav){
+            transition: 3s ease-in-out;
+    }
+     .one,
+.five {
+    border-top: 3px solid #000;
+    
+}
+.two,
+.six {
+    border-right: 3px solid #000;
+    
+}
+.three,
+.seven {
+    border-bottom: 3px solid #000;
+    
+}
+.four,
+.eight {
+    border-left: 3px solid #000;
+    
+}
+
+</style> 
+  <div class="loader-wrapper">
+     <div class="preloader">
+       <div class="preloader-wrap loader">
+            <div class="preloader-one one bd-color"></div>  
+            <div class="preloader-one two bd-color"></div>   
+            <div class="preloader-one three bd-color"></div>   
+            <div class="preloader-one four bd-color"></div>   
+            <div class="preloader-two five bd-color"></div>   
+            <div class="preloader-two six bd-color"></div>   
+            <div class="preloader-two seven bd-color"></div>   
+            <div class="preloader-two eight bd-color"></div>   
+        </div>
+       </div>
+  </div>
+<div class="content">
   <!-- Nav -->
   <div class="header" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 100% 100%;		background-position: 0% 50%;
-
-
-	animation: gradient 15s linear infinite;
-	height: 70vh; @keyframes gradient {
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh; background-attachment: fixed; @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -74,18 +128,17 @@
           <a style="color: white !important;" href="#!" class="brand-logo">BAlcAdo
 </a>    
            
-     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
            <li><a style="color: #fff; font-size: 20px !important;" href="#about"><i  class="fa fa-question-circle fa-2x" style="color: #fff;"></i> About</a></li>
-                        <li><a style="color: #fff; font-size: 20px !important;" href="#donate"><i class="fa fa-pray fa-2x" style="color: #fff;"></i> Donate</a></li>
+ <li><a style="color: #fff; font-size: 20px !important;" href="#donate"><i class="fa fa-pray fa-2x" style="color: #fff;"></i> Donate</a></li>
             <li><a style="color: #fff; font-size: 20px !important;" href="#staff"><i class="fa fa-user fa-2x" style="color: #fff;"></i> Staff</a></li>
             <li><a style="color: #fff; font-size: 20px !important;" href="#screenshots"><i class="fa fa-camera fa-2x" style="color: #fff;"></i> Screenshots</a></li>
-     
             <li><a style="color: #fff; font-size: 20px !important;" href="#contact"><i class="fa fa-envelope fa-2x" style="color: #fff;"></i> Contact</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a style="color: #fff;" href="#about"><i class="fa fa-question-circle fa-3x" style="color: #fff;"></i> About</a></li>
-                          <li><a style="color: #fff;" href="#donate"><i class="fa fa-pray fa-3x" style="color: #fff;"></i> Donate</a></li>
+                     <li><a style="color: #fff;" href="#donate"><i class="fa fa-pray fa-3x" style="color: #fff;"></i> Donate</a></li>
             <li><a style="color: #fff;" href="#staff"><i class="fa fa-user fa-3x" style="color: #fff;"></i> Staff</a></li>
             <li><a style="color: #fff;" href="#screenshots"><i class="fa fa-camera fa-3x" style="color: #fff;"></i> Screenshots</a></li>
             <li><a style="color: #fff;" href="#contact"><i class="fa fa-envelope fa-3x" style="color: #fff;"></i> Contact</a></li>
@@ -98,7 +151,8 @@
 
     <div class="header-content center-align" data-aos="fade">
       <h1 style="padding-top: 6%;">Welcome to Balcado²</h1>
-      <h5 style="">Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of gaming™</h5>
+      <h5 style="">Welcome to simplicity, where <span style="animation: underline 10s ease-in-out infinite alternate;
+"> fun meets ease.</span> Join us and rediscover the joy of gaming™</h5>
       <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="minecraft/"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m2 4v4h4v2H8v6h2v-2h4v2h2v-6h-2v-2h4V6h-4v4h-4V6z"/></svg></a>
       <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="roblox/"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="currentColor" d="M18.926 23.998L0 18.892L5.075.002L24 5.108ZM15.348 10.09l-5.282-1.453l-1.414 5.273l5.282 1.453z"/></svg></a>
       <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="fortnite/"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3h7.5L15 7h-3v3h3v3.5h-3V20l-4 1z"/></svg></a>
@@ -112,16 +166,15 @@
 
   <!-- About -->
 
-  <div class="about" id="about" style="background-color: #ebf3fb;">
+  <div class="about" id="about" name="about" style="background-color: #ebf3fb;">
     <div class="main">
       <div class="row">
         <div class="col s12 l5 align-center">
-            <p>🡇 this is ԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎ one of the biggest fans of Balcado.</p>
-          <img class="responsive-img" src="./src/img/loop.gif" data-aos="fade-right">
+          <img class="responsive-img" src="./src/img/loop.gif" data-aos="fade-right" style="border-radius: 50%;">
         </div>
         <div class="col s12 l7" data-aos="fade-left">
-          <h4>Okay... so, what really is Balcado?</h4>
-          <p>What's the deal with Balcado, you might ask? Well truth be told, its just a name without any deep meaning - just a quirky label, if you will. <br><br>Anyway, Balcado kicked off its journey on 28/3/2023, initialy as a Minecraft-only venture. However, Z_maro, the visionary behind it, decided to expand its horizons into a full-fledged gaming organization. Despite facing setbacks, including bankruptcy, Z_maro's perseverance led to the birth of Balcado². With renewed determination, he harbors aspirations for Balcado to become the premier gaming organization.</p>
+          <h4>Okay... so, what really is <span style="font-family: Major Mono Display;">balcado?</span></h4>
+          <p>What's the deal with  <span style="font-family: Major Mono Display;">balcado</span>, you might ask? Well truth be told, its just a name without any deep meaning - just a quirky label, if you will. <br><br>Anyway,  <span style="font-family: Major Mono Display;">balcado</span> kicked off its journey on 28/3/2023, initialy as a Minecraft-only venture. However, Z_maro, the visionary behind it, decided to expand its horizons into a full-fledged gaming organization. Despite facing setbacks, including bankruptcy, Z_maro's perseverance led to the birth of  <span style="font-family: Major Mono Display;">balcado²</span>. With renewed determination, he harbors aspirations for Balcado to become the premier gaming organization.</p>
             <br>
             <p>On this server we believe in F2P mechanics; not P2W, thats why we have 2 currencies, the 1st is the Lira (you can get this from doing tasks like mining, farming, fishing, and killing mobs), and the 2nd is the Drachma (which you can get by trading for it using items such as blocks or resources with other players, you can also get this by buying a one-time purchase of one of the donating tiers and getting an X amount of Drachmas a week).</p>
           <a class="waves-effect waves-light btn-large grey darken-4" style="margin-top: 2%;" href="#">Discord</a>
@@ -132,7 +185,7 @@
 
   <!-- / About -->
 <!-- Donate -->
- <div class="staff" id="staff" data-aos="fade-up" style="background: #10181e;">
+ <div class="donate" id="donate" name="donate" data-aos="fade-up" style="background: #10181e;">
               <div class="main">
                    <div class="row">
         <div class="col s12">
@@ -157,7 +210,7 @@
   <!-- Staff -->
 
   
-  <div class="staff" id="staff">
+  <div class="staff" id="staff" name="staff">
     <div class="main">
       <div class="row">
         <div class="col s12">
@@ -180,7 +233,7 @@
           <div class="row">
             <div class="col s12">
               <blockquote style="margin: 0% 8% 0% 8%;">
-                   I'm 7TE, the Co-Founder of Balcaldo and I created this website. <span style="font-size: 200%;">👨🏻‍💻</span>
+                   I'm 7TE, the Co-Founder of <span style="font-family: Major Mono Display;">balcado</span> and I created this website. <span style="font-size: 200%;">👨🏻‍💻</span>
               </blockquote>
             </div>
           </div>
@@ -208,7 +261,7 @@
           <div class="row">
             <div class="col s12">
               <blockquote style="margin: 0% 8% 0% 8%;">
-                        Hey there, I'm Z_maro, the creator of Balcado. One day, I simply woke up with the idea to start this server. Since then, my goal has been to expand it, Now, my dream is for Balcado to become the largest gaming organization out there!
+                        Hey there, I'm Z_maro, the creator of <span style="font-family: Major Mono Display;">balcado</span>. One day, I simply woke up with the idea to start this server. Since then, my goal has been to expand it, Now, my dream is for <span style="font-family: Major Mono Display;">balcado</span> to become the largest gaming organization out there!
               </blockquote>
             </div>
           </div>
@@ -236,7 +289,8 @@
           <div class="row">
             <div class="col s12">
               <blockquote style="margin: 0% 8% 0% 8%;">
-               ass
+                               Hey, I'm Asser! I've got big dreams of becoming a professional VALORANT player one day. Right now, I might be Iron 2, but everyone starts somewhere , right? Besides VALORANT, I enjoy playing Minecraft. I used to be heavily involved with this server, even a right hand for a while, but i decided to step away for no particular reason. Now I'm back as a moderator, playing an important role in this community.
+
               </blockquote>
             </div>
           </div>
@@ -264,7 +318,7 @@
           <div class="row">
             <div class="col s12">
               <blockquote style="margin: 0% 8% 0% 8%;">
-                        i ran out of ideas
+                Hey there, I'm Koru. Maro's lending me a hand to write this because, well, I'm too lazy to do it myself. Anyway, in this server, I'm a dev, tasked with fixing bugs in specific plugins. Once that's sorted, it's straight back to bed for me.
               </blockquote>
             </div>
           </div>
@@ -278,8 +332,8 @@
         </div>
       </div>
     </div>
-            <div class="row">
-             <div class="col m6 s12 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="150">
+     <div class="row">
+             <div class="col m5 s12 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="150">
         <div class="card-panel no-padding">
           <div class="row">
             <div class="col s12 no-padding">
@@ -290,6 +344,8 @@
             <div class="col s12 center-align">
               <h5>Anes (Nightmaree__)</h5>
             </div>
+            Hey, I'm Anes! Ever since I was a kid, I've always dreamed of being part of a community that's just like me—funny, awesome, and unique. That's why I decided to join Balcado. It's the perfect place for me to find where I belong.
+
           </div>
           <div class="row">
             <div class="col s12">
@@ -310,6 +366,7 @@
     </div>
   </div>
 </div>
+    
   <!-- / Staff -->
 
   <!-- Vip -->
@@ -317,7 +374,7 @@
   <!-- /Vip -->
 
   <!-- Screenshots -->
-  <div class="screenshots center-align" id="screenshots" style="  background-color: #ebf3fb; color: black;
+  <div class="screenshots center-align" id="screenshots" name="screenshots" style="  background-color: #10181e; color: #fff;
 ">
     <div class="main" data-aos="fade">
       <div class="row">
@@ -374,10 +431,10 @@
   <!-- /Screenshots -->
 
   <!-- Contact -->
-  <div class="contact" id="contact" style=" background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 100% 100%;
+  <div class="contact" id="contact" name="contact" style="background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 70vh; background-attachment: fixed; @keyframes gradient {
+	height: 100vh; background-attachment: fixed; @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -387,7 +444,7 @@
 	100% {
 		background-position: 0% 50%;
 	}
-}/*background: linear-gradient(90deg, #9d00ff, #6b83fc, #9d00ff);     transition: background 1.5s ease-in-out; background-position: 50% 10%; background-attachment: fixed; */">
+}">
     <div class="main">
       <div class="card-panel" data-aos="fade-up" style=" background-color: rgba(255,255,255,0.1) !important; backdrop-filter: blur(8px) !important; ">
         <h4 style="color: white;" class="center-align">Contact Us?</h4>
@@ -449,7 +506,7 @@
     </div>
     <div class="footer-copyright grey darken-4 z-depth-4">
       <div class="container">
-        <a class="grey-text text-lighten-4 right">©Balcado 2024</a>
+        <a class="grey-text text-lighten-4 right">©<span style="font-family: Major Mono Display;">balcado</span> 2024</a>
       </div>
     </div>
   </footer>
@@ -486,6 +543,22 @@ $.getJSON(url, function(r) {
 
 });
     </script>
+      <script>   document.addEventListener("DOMContentLoaded", function () {
+            // Simulate content loading delay (you can replace this with your actual loading logic)
+            setTimeout(function () {
+                // Remove loader and display content
+                document.querySelector('.loader-wrapper').style.display = 'none';
+                document.querySelector('.loader-wrapper').style.transition = '1.5s ease-in-out';
+
+                document.querySelector('.content').style.display = 'block';
+                document.querySelector('.content').style.transition = '1.5s ease-in-out';
+
+            }, 4000); // Adjust the delay as needed
+        });
+
+      </script>
+      </div>
+
 </body>
 
 </html>
