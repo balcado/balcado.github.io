@@ -1,8 +1,9 @@
-const counters = document.querySelectorAll('.counter');
-const speed = 200; // The lower the slower
+
 
 counters.forEach(counter => {
 	const updateCount = () => {
+        const counters = document.querySelectorAll('.counter');
+const speed = 1000; // The lower the slower
 		const target = +counter.getAttribute('data-target');
 		const count = +counter.innerText;
 
