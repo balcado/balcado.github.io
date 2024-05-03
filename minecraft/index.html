@@ -2,7 +2,27 @@
 <html>
 <head>
 <!---->
+   <!-- Primary Meta Tags -->
 
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slandox ⛏</title>
+    <meta name="title" content="Slandox ⛏" />
+  <meta name="description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft." />
+  <link rel="icon" type="image/png" href="../src/img/THELOGO.png" sizes="512x512">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://balcado.github.io" />
+  <meta property="og:title" content="Slandox ⛏" />
+  <meta property="og:description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft." />
+  <meta property="og:image" content="../src/img/THELOGO.png" sizes="512x512" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://balcado.github.io" />
+  <meta property="twitter:title" content="Slandox ⛏" />
+  <meta property="twitter:description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft." />
+  <meta property="twitter:image" content="./src/img/THELOGO.png" sizes="512x512" />
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
@@ -29,25 +49,14 @@
   
   <!-- Theme's Stylesheet -->
   <link rel="stylesheet" href="../src/css/theme.css" />
-<!-- Uno.CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/normalize.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.css">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" /> 																																																																																																																																																																																																																																																																																																		
+
   <!-- Theme JS -->
   <script src="../src/js/smoothscroll.js"></script>
-  <script src="../src/js/nav2.js"></script>
+  <script src="../src/js/nav1.js"></script>
 
-  <!-- Site Title -->
-  <title>Evolution ⛏</title>
-
-  <!-- Meta Info -->
-  <meta charset="UTF-8">
-  <meta name="author" content="7TE &amp; Z_Maro">
-  <meta name="description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft.">
-  <meta name="keywords" content="Minecraft, Server, Balcado, Multiplayer, yeah">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Balcado ⛏" />
-  <meta name="description" content="Welcome to simplicity, where fun meets ease. Join us and rediscover the joy of Minecraft." />
-  <link rel="icon" type="image/png" href="../src/img/THELOGO.png" sizes="64x64">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+        defer></script>
 </head>
 
 <body>
@@ -72,6 +81,8 @@
             transition: 3s ease-in-out;
     }
 
+        
+
 </style> 
   <div class="loader-wrapper">
      <div class="preloader">
@@ -87,25 +98,131 @@
         </div>
        </div>
   </div>
-<div class="content">
+<div class="content" id="device"  style="cursor: url('icons/cursor.png'), auto !important;">
   <!-- Nav -->
   <div  class="header" style="background:  url('../src/img/cityscape.jpg');  	
-background-position: 50% 10%; background-attachment: fixed; width: 100vw; height: 100vh; ">
-    <div class="navbar-fixed" >
-      <nav class="z-depth-0" style="">
+background-position: 50% 10%; background-attachment: fixed; width: 100vw;  height:100vh;">
+      
+    <!-- <div class="navbar bg-base-100" style="position: fixed; z-index: 99999999999999999;" >
+      <div class="navbar" style="position: fixed;">
+      
+                  <div class="flex-1 m-10">
+          <a class="btn btn-ghost text-4xl">SLANDOX ⛏</a>
+        </div>
+          
+        <div class="flex-none" >
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                <span class="badge badge-sm indicator-item">8</span>
+              </div>
+            </div>
+            <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+              <div class="card-body">
+                <span class="font-bold text-lg">8 Items</span>
+                <span class="text-info">Subtotal: $999</span>
+                <div class="card-actions">
+                  <button class="btn btn-primary btn-block">View cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar mr-5">
+              <div class="w-10 rounded-full">
+                <img alt="Tailwind CSS Navbar component" src="../src/img/user.jpg" />
+              </div>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>      -->
+
+      <div class="drawer h-56 rounded overflow-hidden" data-svelte-h="svelte-qin2o0" style="height: 50vh; "><input id="my-drawer-3" type="checkbox" class="drawer-toggle"> <div class="flex flex-col drawer-content"><div class="w-full navbar bg-base-300 " style="position: fixed; z-index: 99999999999999999; "><div class="flex-none lg:drawer-open"><label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></label></div> <div class="flex-1 px-2 mx-2 center-align  glass [--glass-blur:20px] [--glass-opacity:0%] [--glass-border-opacity:0] [--rounded-box:8px]" style="font-family: 'Major Mono Display', sans-serif; text-shadow: 2px 4px 20px rgba(255,255,255,1); font-size: 45px; border-radius:  8px; 
+">SlAndoX</div> <div class="flex-none hidden lg:block">         <div class="flex-none">
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+          <span class="badge badge-sm indicator-item">8</span>
+        </div>
+      </div>
+      <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-10 bg-base-100 shadow">
+        <div class="card-body">
+          <span class="font-bold text-lg">8 Items</span>
+          <span class="text-info">Subtotal: $999</span>
+          <div class="card-actions">
+            <button class="btn btn-primary btn-block">View cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+              <img alt="Tailwind CSS Navbar component" src="../src/img/user1.png" />
+          </div>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52" style="background-color: transparent !important;">
+
+          <li style="background-color: #15191E !important;">
+              <a class="justify-between" style="background-color: #15191E !important;">
+                  Profile
+                  <span class="badge">New</span>
+              </a>
+          </li>
+          <li style="background-color: #15191E !important;"><a style="background-color: #15191E !important;">Settings</a></li>
+          <li style="background-color: #15191E !important;"><a style="background-color: #15191E !important;">Logout</a></li>
+      </ul>
+  </div>
+  
+  
+  </div></div></div> <div class="flex justify-center items-center flex-grow " style="z-index: 999"></div> <h1 class="pt-6 text-center text-4xl md:text-5xl lg:text-6xl mt-20" style="z-index: 999">Welcome to <span class="font-mono" style="z-index: 999; font-family: 'Major Mono Display', sans-serif; text-shadow: 2px 4px 20px rgba(255,255,255,1); ">SlAndoX</span></h1>
+  <h5 class="text-center text-lg md:text-xl lg:text-2xl" style="z-index: 999"><b>Welcome to simplicity, where <span class="animate-underline" style="z-index: 999">fun meets ease.</span> Join us and rediscover the joy of Minecraft.</b></h5>
+  <div class="flex flex-wrap justify-center gap-4 mt-2">
+      <a class="btn btn-lg" style="z-index: 999" href="../"> 
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m2 4v4h4v2H8v6h2v-2h4v2h2v-6h-2v-2h4V6h-4v4h-4V6z"/>
+          </svg>
+      </a>
+      <a class="btn btn-lg" style="z-index: 999" href="../roblox">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M18.926 23.998L0 18.892L5.075.002L24 5.108ZM15.348 10.09l-5.282-1.453l-1.414 5.273l5.282 1.453z"/>
+          </svg>
+      </a>
+      <a class="btn btn-lg" style="z-index: 999" href="../fortnite">
+          <span class="ermm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14" viewBox="0 0 24 24">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3h7.5L15 7h-3v3h3v3.5h-3V20l-4 1z"/>
+              </svg>
+          </span>
+      </a>
+  </div></div> <div class="drawer-side h-full" style=""><label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> <ul class="p-4 menu w-60  min-h-full bg-base-200 mt-7"><li class="mt-5"><button class="mt-5">Sidebar Item 1</button></li> <li class="mt-5"><button class="mt-5">Sidebar Item 2</button></li></ul></div></div> </div>
+    
+      <!-- <nav class="z-depth-5" style="">
         <div class="nav-wrapper">
             
-          <a href="#!" class="brand-logo">Evolution
-</a>    
+          <a href="#!" class="brand-logo">SlandoX</a>   
            
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse pulse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
            <li><a style="color: #19dacb; font-size: 21px !important;" href="#about"><i  class="fa fa-question-circle fa-2x" style="color: #19dacb;"></i> About</a></li>
                         <li><a style="color: #19dacb; font-size: 21px !important;" href="#donate"><i class="fa fa-pray fa-2x" style="color: #19dacb;"></i> Donate</a></li>
             <li><a style="color: #19dacb; font-size: 21px !important;"  href="#vip"><i class="fa fa-crown fa-2x" style="color: #19dacb;"></i>Shop</a></li>
             <li><a style="color: #19dacb; font-size: 21px !important;" href="#screenshots"><i class="fa fa-camera fa-2x" style="color: #19dacb;"></i> Screenshots</a></li>
                       <li><a style="color: #19dacb; font-size: 21px !important;" href="#stats"><i class="fa fa-bar-chart fa-2x" style="color: #19dacb;"></i> Stats</a></li>
-            <li><a style="color: #19dacb; font-size: 21px !important;" href="#contact"><i class="fa fa-envelope fa-2x" style="color: #19dacb;"></i> Contact</a></li>
+            <li><a style="color: #19dacb; font-size: 21px !important;" href="#contact"><i class="fa fa-envelope fa-2x" style="color: #19dacb;"></i> Contact᲼</a></li>
+                 <li><a style="color: #19dacb; font-size: 21px !important;" href="#contact"><i class="fa fa-spin fa-cog fa-2x" style="color: #19dacb;"></i></a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a style="color: #19dacb;" href="#about"><i class="fa fa-question-circle fa-3x" style="color: #19dacb;"></i> About</a></li>
@@ -113,80 +230,64 @@ background-position: 50% 10%; background-attachment: fixed; width: 100vw; height
             <li><a style="color: #19dacb;" href="#shop"><i class="fa fa-crown fa-3x" style="color: #19dacb;"></i> Shop</a></li>
             <li><a style="color: #19dacb;" href="#screenshots"><i class="fa fa-camera fa-3x" style="color: #19dacb;"></i> Screenshots</a></li>
               <li><a style="color: #19dacb;" href="#stats"><i class="fa fa-bar-chart fa-3x" style="color: #19dacb;"></i> Stats</a></li>
-            <li><a style="color: #19dacb;" href="#contact"><i class="fa fa-envelope fa-3x" style="color: #19dacb;"></i> Contact</a></li>
+            <li><a style="color: #19dacb;" href="#contact"><i class="fa fa-envelope fa-3x" style="color: #19dacb;"></i> Conta  ct</a></li>
+              <li><a style="color: #19dacb; font-size: 21px !important;" href="#contact"><i class="fa fa-cog fa-2x" style="color: #19dacb;"></i></a></li>
           </ul>
         </div>
-      </nav>
-</div>
+      </nav>-->
+
       
       <!-- / Nav -->
-<!-- ARE. YOU. READY? server trailer thing here.  -->
- 
-<!-- <div class="videos center-align" id="videos" data-aos="fade-out" style="width: 100vw; height: 100vh; overflow: hidden;">
-          
 
-<div class="main" style="">
-      <div class="row">
-        <div class="col l20 s20">
-         <video class="responsive-video center-align" width= "3000vw" height= " 750vh"   fullscreen muted loop autoplay="true" >
-<source src="../src/img/balcado.mp4" type="video/mp4">       
-        </div>
-    
-      </div>
-    </div>
 
-</div>  -->
-    <div class="header-content center-align" data-aos="fade">
-      <h1 style="padding-top: 6%;">Welcome to <span style="font-family: Major Mono Display;">EVOLUTION  </span> </h1>
-      <h5 style=""><b>Welcome to simplicity, where<span style="animation: underline 10s ease-in-out infinite alternate;
-"> fun meets ease.</span> Join us and rediscover the joy of Minecraft.</b></h5>
-      <a  class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="../"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="currentColor" d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m2 4v4h4v2H8v6h2v-2h4v2h2v-6h-2v-2h4V6h-4v4h-4V6z"/></svg></a>
-      <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="../roblox"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="currentColor" d="M18.926 23.998L0 18.892L5.075.002L24 5.108ZM15.348 10.09l-5.282-1.453l-1.414 5.273l5.282 1.453z"/></svg></a>
-      <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="../fortnite"><span class="ermm"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3h7.5L15 7h-3v3h3v3.5h-3V20l-4 1z"/></svg></span></a>
-    </div>
-  </div> 
+
+
+
+
 
   <!-- Info -->
-
-  <div class="info center-align" name="info" data-aos="fade">
+  <style>
+.slide-enter-active, .slide-leave-active {
+            transition: opacity 1.5s ease;
+        }
+        .slide-enter, .slide-leave-to {
+            opacity: 0;
+        }
+</style>
+  <div class="info text-center" name="info" data-aos="fade-down" data-aos-once="true">
     <div class="main">
-      <div class="row">
-        <div class="col l4 s12">
-          <img class="responsive-img" src="../src/img/dirt-icon.png">
-          <h4><b>Survival</b></h4>
-          <i class="chip">
-        <div id="rest1">
-Loading ...</div>
-          </i>
-          <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
-            Suspendisse finibus non sem vitae viverra.</p>
-            <button class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;" id="copyButton1">Connect <i class="fa fa-plug fa-1x"></i></button>
-
+        <div x-data="{ slide: 0 }" x-init="setInterval(() => { slide = (slide + 1) % 3 }, 5000)">
+            <div x-show="slide === 0" class="transition-opacity duration-1500 ease-in opacity-100">
+                <img src="../src/img/dirt-icon.png" class="mx-auto">
+                <h4 class="mt-4"><b>Survival</b></h4>
+                <div class="chip">
+                    <div id="rest1">Loading ...</div>
+                </div>
+                <p class="mt-4">Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae viverra.</p>
+                <button class="btn btn-lg mt-8" id="copyButton1">Connect <i class="fa fa-plug fa-1x"></i></button>
+            </div>
+            <div x-show="slide === 1" class="transition-opacity duration-1500 ease-in opacity-100">
+                <img src="../src/img/stone-icon.png" class="mx-auto">
+                <h4 class="mt-4"><b>Creative</b></h4>
+                <div class="chip">
+                    <div id="rest2">Loading ...</div>
+                </div>
+                <p class="mt-4">Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae viverra.</p>
+                <button class="btn btn-lg mt-8" id="copyButton2">Connect <i class="fa fa-plug fa-1x"></i></button>
+            </div>
+            <div x-show="slide === 2" class="transition-opacity duration-1500 ease-in opacity-100">
+                <img src="../src/img/ender-icon.png" class="mx-auto">
+                <h4 class="mt-4"><b>SkyBlock</b></h4>
+                <div class="chip">
+                    <div id="rest3">Loading ...</div>
+                </div>
+                <p class="mt-4">COMING SOON</p>
+                <button class="btn btn-lg mt-8" id="copyButton3">Connect <i class="fa fa-plug fa-1x"></i></button>
+            </div>
         </div>
-        <div class="col l4 s12">
-          <img class="responsive-img" src="../src/img/stone-icon.png">
-          <h4><b>Creative</b></h4>
-          <i class="chip">
-<div id="rest2">
-Loading ...</div>
-          </i>
-          <p>Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
-            Suspendisse finibus non sem vitae viverra.</p>
-            <button class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;" id="copyButton2">Connect <i class="fa fa-plug fa-1x"></i></button>
-        </div>
-        <div class="col l4 s12">
-          <img class="responsive-img" src="../src/img/ender-icon.png">
-          <h4><b>SkyBlock</b></h4>
-          <i class="chip">
-<div id="rest3">
-Loading ...</div>
-          </i>
-          <p>COMING SOON</p>
-          <button class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;" id="copyButton3">Connect <i class="fa fa-plug fa-1x"></i></button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
+
 
   <!-- / Info -->
 
@@ -194,218 +295,183 @@ Loading ...</div>
 
   <div class="about" id="about" name="about" style="background-color: #ebf3fb;">
     <div class="main">
-      <div class="row">
-        <div class="col s12 l5 align-center">
-          <img class="responsive-img" src="../src/img/loop2.gif" data-aos="fade-right">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-12">
+            <div class="lg:col-span-5 flex items-center justify-center">
+                <img class="w-full" src="../src/img/loop2.gif" data-aos="fade-right" data-aos-once="true">
+            </div>
+            <div class="lg:col-span-7" data-aos="fade-left">
+                <h4 class="text-xl lg:text-2xl font-bold mb-4">Okay... so, what really is <span class="font-mono">slandox?</span></h4>
+                <p class="mb-4"><span class="font-mono">slandox</span> is now the official name for the former Balcado server, which now serves the title for the overarching organization. Under this new identity, significant changes have taken place. The server has transitioned into a mod and plugins environment, with the promise of regular map alterations every 2 months, unless players prefer to maintain the current map. Despite being aware of our current standing as "weaker" compared to Hypixel, we're determined to swiftly rise through the ranks and position ourselves as a formidable competitor alongside them.</p>
+                <p class="mb-4">While the primary focus remains on survival and creative gameplay, plans are in motion to introduce 3 exciting new game modes; skyblock, one block challenge, and one chest challenge. Furthermore, our commitment to enhancing experience is underscored by frequent updates released every week or 2.</p>
+                <p class="mb-4"> On this server we believe in F2P mechanics; not P2W, that's why we have 2 currencies, the 1st is the Lira (you can get this from doing tasks like mining, farming, fishing, and killing mobs), and the 2nd is the Drachma (which you can get by trading for it using items such as blocks or resources with other players, you can also get this by buying a one-time purchase of one of the donating tiers and getting an X amount of Drachmas a week) Drachmas are only used for cosmetic purposes like purchasing garments for example.</p>
+                <a class="btn btn-lg bg-gray-800 hover:animate-pulse" style="margin-top: 2%;" href="qQn56RDHxf">Discord</a>
+            </div>
         </div>
-        <div class="col s12 l7" data-aos="fade-left">
-          <h4><b>Okay... so, what really is <span style="font-family: Major Mono Display;">evolution?</span></b></h4>
-          <p><span style="font-family: Major Mono Display;">evolution</span> is now the official name for the former Balcado server, which now serves the title for the overarching organization. Under this new identity, significant changes have taken place. The server has transitioned into a mod and plugins enviroment, with the promise of regular map alterations every 2 months, unless players prefer to maintain the current map. Despite being aware of our current standing as "weaker" compared to Hypixel, we're determined to swiftly rise through the ranks and position ourselves as a formidable competitor alongside them.</p>
-            <br>
-         <p>While the primary focus remains on survival and creative gameplay, plans are in motion to introduce 3 exciting new game modes; skyblock, one block challenge, and one chest challenge. Furthermore, our commitment to enhancing experience is underscored by frequent updates released every week or 2.</p>
-            <br>
-            <p> On this server we believe in F2P mechanics; not P2W, thats why we have 2 currencies, the 1st is the Lira (you can get this from doing tasks like mining, farming, fishing, and killing mobs), and the 2nd is the Drachma (which you can get by trading for it using items such as blocks or resources with other players, you can also get this by buying a one-time purchase of one of the donating tiers and getting an X amount of Drachmas a week) Drachmas are only used for cosmetic purposes like purchasing garnments for example.</p>
-        
-            <a class="waves-effect waves-light btn-large grey darken-4" style="margin-top: 2%;" href="qQn56RDHxf">Discord</a>
-            
-        </div>
-      </div>
     </div>
-  </div>
+</div>
+
+
 
   <!-- / About -->
 
 <!-- Donate -->
- <div class="donate" id="donate" name="donate" data-aos="fade-up" style="background: #10181e;">
-              <div class="main">
-                   <div class="row">
-        <div class="col s12">
-          <h4 class="center-align" style="padding-bottom: 1%; background: #10181e; color: #fff;"><b>Donate</b></h4>
-      </div>
-    </div>
-                   <div class="row">
-        <div class="col s12">
-          <h6 class="center-align" style="padding-bottom: 1%; color: #fff;">Your donations help us grow and improve.</h6>
-
-      </div>
-                       <div class="row">
-                                   <div class="col s12">
-<div class="center-align">
-                                   <a class="waves-effect waves-light btn-large grey darken-4 " style="margin-top: 2%; " href="https://www.paypal.com/donate/?hosted_button_id=2RPU6Q8P8FC7E">Donate</a>
-    </div>
-    </div>
-                       </div>
-    </div>
-                </div>
+<div class="donate bg-gray-800" id="donate" name="donate" data-aos="fade-up" data-aos-once="true">
+  <div class="main">
+      <div class="grid grid-cols-1 gap-6">
+          <div class="col-span-12">
+              <h4 class="text-center py-2 bg-gray-800 text-white font-bold"><b>Donate</b></h4>
           </div>
+          <div class="col-span-12">
+              <h6 class="text-center py-2 text-white">Your donations help us grow and improve.</h6>
+          </div>
+          <div class="col-span-12">
+              <div class="flex justify-center">
+                  <a class="btn btn-lg bg-gray-900 hover:animate-pulse mt-4" href="https://www.paypal.com/donate/?hosted_button_id=2RPU6Q8P8FC7E">Donate</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
   <!-- Staff -->
 
 
   <!-- / Staff -->
 
   <!-- Vip -->
-  <div class="vip center-align" id="vip"  name="shop" style="background: #ebf3fb;">
-    <div class="main">
-      <div class="row" data-aos="fade-down">
-        <div class="col s12">
-          <h4 style="color: #000;"><b>Purchase ranks here!</b></h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 l3" data-aos="fade-right">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s12" style="height: 10% !important;">
-              
-                  
-                <h5>Supporter 🙂</h5>
-                <span>💲5  </span>
-                  
-                <br><br>
-                <table class="centered responsive-table striped">
-                  <tbody>
-                    <tr>
-                      <td>10 drachmas a week</td>
-                    </tr>
-                    <tr>
-                      <td>Exclusive supporter tag in chat and on forums</td>
-                    </tr>
-                    <tr>
-                      <td> Access to /nick command to change your in-game nickname</td>
-                    </tr>
-                    <tr>
-                      <td>Priority queue access during peak times</td>
-                    </tr>
-                    <tr>
-                      <td> Early access to new features and updates</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <br>
-                             <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/BA6LX2L8AZLB2">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
 
-              </div>
+  <div class="vip center-align" id="vip" name="shop" style="background: #ebf3fb;">
+    <div class="main">
+        <div class="grid grid-cols-1 gap-6 items-center" data-aos="fade-down" data-aos-once="true">
+            <div class="col-span-full flex justify-center">
+                <img class="w-32 h-32" src="../src/img/leftarrow.png" alt="Left Arrow">
+                <h4 class="text-black"><b>Purchase ranks here!</b></h4>
+                <img class="w-32 h-32" src="../src/img/rightarrow.png" alt="Right Arrow">
             </div>
-          </div>
         </div>
-        <div class="col s12 l3" data-aos="fade-right">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s12">
-                           <!-- <script src="https://www.paypal.com/sdk/js?client-id=BAAYLvthc48Nt0vF3lSr-PuLiRbQX-N61aGSaaT_2nTLBlLloaZ4LQS09yfpdUFgHM9AlkPD4LAmpbXHCE&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
-   
-                  <div id="paypal-container-HR9N2GYB28DLM"></div>
-                   <script>   
-                    paypal.HostedButtons({
-                      hostedButtonId: "HR9N2GYB28DLM",
-                    }).render("#paypal-container-HR9N2GYB28DLM")
-                  </script> -->
-                  
-                <h5>Backer 😄</h5>
-                <span>💲10 USD </span>
-                  
-                <br><br>
-                <table class="centered responsive-table striped">
-                  <tbody>
-                    <tr>
-                      <td>20 drachmas a week (Includes Supporter perks)</td>
-                    </tr>
-                    <tr>
-                      <td> Custom prefix and suffix for your in-game name</td>
-                    </tr>
-                    <tr>
-                      <td>Ability to set a home in one additional location</td>
-                    </tr>
-                    <tr>
-                      <td>Access to a private Backer Discord channel for sneak peeks and discussions</td>
-                    </tr>
-                    <tr>
-                      <td>Monthly Backer-exclusive events with special rewards</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <br>
-     
-                    
-                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/LBFYNT4AV4TMU">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
-                  
-                  
-              </div>
+        <div class="grid grid-cols-4 gap-6">
+            <div class="col-span-full md:col-span-1 lg:col-span-1 w-9/10" data-aos="fade-right" data-aos-once="true">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Supporter 🙂</h5>
+                        <span>💲5</span>
+                        <table class="w-full mb-4 table-auto">
+                            <tbody>
+                                <tr>
+                                    <td>10 drachmas a week</td>
+                                </tr>
+                                <tr>
+                                    <td>Exclusive supporter tag in chat and on forums</td>
+                                </tr>
+                                <tr>
+                                    <td>Access to /nick command to change your in-game nickname</td>
+                                </tr>
+                                <tr>
+                                    <td>Priority queue access during peak times</td>
+                                </tr>
+                                <tr>
+                                    <td>Early access to new features and updates</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="btn btn-lg bg-gray-800 hover:animate-pulse" href="https://www.paypal.com/ncp/payment/BA6LX2L8AZLB2">Purchase <i class="fab fa-paypal fa-1x"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col s12 l3" data-aos="fade-left">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s12">
-                <h5>Benefactor 🥳</h5>
-                <span>💲15 USD </span>
-                <br><br>
-                <table class="centered responsive-table striped">
-                  <tbody>
-                    <tr>
-                      <td>30 drachmas a week (Includes Supporter and Backer perks)</td>
-                    </tr>
-                    <tr>
-                      <td>Exclusive Benefactor cosmetic item (such as a cape or hat)</td>
-                    </tr>
-                    <tr>
-                      <td> Increased daily claim block limit in the survival world</td>
-                    </tr>
-                    <tr>
-                      <td>Ability to fly in your own claimed land</td>
-                    </tr>
-                    <tr>
-                      <td>Quarterly Benefactor-only build competitions with substantial prizes</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <br>
-                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/TRWQVWJX8KJNE">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
+            <div class="col-span-full md:col-span-1 lg:col-span-1 w-9/10" data-aos="fade-right" data-aos-once="true">
+              <div class="card">
+                  <div class="card-body">
+                      <h5>Backer 😄</h5>
+                      <span>💲10</span>
+                      <table class="w-full mb-4 table-auto">
+                        <tbody>
+                          <tr>
+                            <td>20 drachmas a week (Includes Supporter perks)</td>
+                          </tr>
+                          <tr>
+                            <td> Custom prefix and suffix for your in-game name</td>
+                          </tr>
+                          <tr>
+                            <td>Ability to set a home in one additional location</td>
+                          </tr>
+                          <tr>
+                            <td>Access to a private Backer Discord channel for sneak peeks and discussions</td>
+                          </tr>
+                          <tr>
+                            <td>Monthly Backer-exclusive events with special rewards</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a class="waves-effect waves-light btn btn-lg grey darken-4 pulse" href="https://www.paypal.com/ncp/payment/LBFYNT4AV4TMU">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
+                    </div>
               </div>
-            </div>
           </div>
-        </div>
-              <div class="col s12 l3" data-aos="fade-left">
-          <div class="card-panel">
-            <div class="row">
-              <div class="col s12">
-                <h5>Enthusiast 🤯</h5> 
-                <span>💲50 USD </span>
-                <br><br>
-                <table class="centered responsive-table striped">
-                  <tbody>
-                    <tr>
-                      <td>100 drachmas a week (Includes Supporter, Backer, and Benefactor perks)</td>
-                    </tr>
-                    <tr>
-                      <td>Unique Enthusiast particle effects for your character</td>
-                    </tr>
-                    <tr>
-                      <td>Access to a private Enthusiast Discord server for direct communication with staff</td>
-                    </tr>
-                    <tr>
-                      <td>Monthly Enthusiast-only Q&A sessions with server developers</td>
-                    </tr>
-                    <tr>
-                      <td>Custom Enthusiast statue or monument built in the spawn area, showcasing your username and contributions</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <br>
-                <a class="waves-effect waves-light btn-large grey darken-4" href="https://www.paypal.com/ncp/payment/TGLAQTWGYCNL6">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
-              </div>
+          <div class="col-span-full md:col-span-1 lg:col-span-1 w-9/10" data-aos="fade-right" data-aos-once="true">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Benefactor 🥳</h5>
+                    <span>💲15</span>
+                    <table class="w-full mb-4 table-auto">
+                      <tbody>
+                        <tr>
+                          <td>30 drachmas a week (Includes Supporter and Backer perks)</td>
+                        </tr>
+                        <tr>
+                          <td>Exclusive Benefactor cosmetic item (such as a cape or hat)</td>
+                        </tr>
+                        <tr>
+                          <td> Increased daily claim block limit in the survival world</td>
+                        </tr>
+                        <tr>
+                          <td>Ability to fly in your own claimed land</td>
+                        </tr>
+                        <tr>
+                          <td>Quarterly Benefactor-only build competitions with substantial prizes</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a class="waves-effect waves-light btn btn-lg grey darken-4 pulse" href="https://www.paypal.com/ncp/payment/TRWQVWJX8KJNE">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
+                  </div>
             </div>
-          </div>
         </div>
+        <div class="col-span-full md:col-span-1 lg:col-span-1 w-9/10" data-aos="fade-right" data-aos-once="true">
+          <div class="card">
+              <div class="card-body">
+                  <h5>Enthusiast 🤯</h5>
+                  <span>💲5</span>
+                  <table class="w-full mb-4 table-auto">
+                    <tbody>
+                      <tr>
+                        <td>100 drachmas a week (Includes Supporter, Backer, and Benefactor perks)</td>
+                      </tr>
+                      <tr>
+                        <td>Unique Enthusiast particle effects for your character</td>
+                      </tr>
+                      <tr>
+                        <td>Access to a private Enthusiast Discord server for direct communication with staff</td>
+                      </tr>
+                      <tr>
+                        <td>Monthly Enthusiast-only Q&A sessions with server developers</td>
+                      </tr>
+                      <tr>
+                        <td>Custom Enthusiast statue or monument built in the spawn area, showcasing your username and contributions</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="waves-effect waves-light btn btn-lg grey darken-4 pulse" href="https://www.paypal.com/ncp/payment/TGLAQTWGYCNL6">Purchase <i class="fab fa-paypal fa-1x"></i> </a>
+                </div>
+          </div>
       </div>
+        </div>  
     </div>
-  </div>
+</div>
   <!-- /Vip -->
 
   <!-- Screenshots -->
   <div class="screenshots center-align" id="screenshots"  name="screenshots" style="background: #10181e;">
-    <div class="main" data-aos="fade">
+    <div class="main" data-aos="fade" data-aos-once="true">
       <div class="row">
         <div class="col s12">
           <h4 style="color: #fff;"><b>Server Screenshots</b></h4>
@@ -413,48 +479,48 @@ Loading ...</div>
       </div>
       <div class="row">
         <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="../src/img/bg-1.png">
+          <div class="card" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" style="width: 50vw; height: 25vh;" src="../src/img/bg-1.png">
           </div>
         </div>
         <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="../src/img/bg-2.png">
+          <div class="card" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" style="width: 50vw; height: 25vh;" src="../src/img/bg-2.png">
+          </div>
+        </div>
+     <div class="col l3 s6">
+          <div class="card" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" style="width: 50vw; height: 25vh;" src="../src/img/bg-3.png">
           </div>
         </div>
         <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="../src/img/bg-3.png">
+          <div class="card" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" style="width: 50vw; height: 25vh;" src="../src/img/bg-4.png">
+          </div>
+        </div>
+          <div class="col l3 s6">
+          <div class="card" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" style="width: 50vw; height: 25vh;" src="../src/img/bg-5.png">
           </div>
         </div>
         <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="../src/img/bg-4.png">
+          <div class="card" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" style="width: 50vw; height: 25vh;" src="../src/img/bg-6.png">
+          </div>
+        </div>
+     <div class="col l3 s6">
+          <div class="card" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed"style="width: 50vw; height: 25vh;" src="../src/img/bg-7.png">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" style="width: 50vw; height: 25vh;" src="../src/img/bg-8.png">
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="../src/img/bg-5.png">
-          </div>
-        </div>
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="../src/img/bg-6.png">
-          </div>
-        </div>
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="../src/img/bg-7.png">
-          </div>
-        </div>
-        <div class="col l3 s6">
-          <div class="card-panel" style="margin: 0; padding: 0;">
-            <img class="responsive-img materialboxed" src="../src/img/bg-8.png">
-          </div>
-        </div>
-      </div>
+
+
     </div>
   </div>
   <!-- Screenshots -->
@@ -507,7 +573,12 @@ header h1 {
 
     
 }
+ 
 
+
+    
+   
+        
 @media (max-width: 1000px) {
 	.counters .container {
 		grid-template-columns: repeat(2, 1fr);
@@ -520,89 +591,101 @@ header h1 {
 	}
 	#counterID{
         margin-left: -70px;
+        
     }
     .tree{
         	font-size: 18.5px;
 
     }
+
     
 
 }
 
     </style>
-    <div class="counters center-align" id="stats" name="stats" data-aos="fade-up" style="font-family: 'Oxanium', sans-serif; background-color: #ebf3fb">
+    <div class="counters center-align" id="stats" name="stats" data-aos="fade-down" data-aos-once="true" style="font-family: 'Oxanium', sans-serif; background-color: #ebf3fb">
                       <h4 class="center-align" style="padding-bottom: 1%; background: #ebf3fb;"><b>Why Us?</b></h4>
 
               <div class="main" style="display: inline-flex;">
                    <div class="row" style>
-        <div class="col s12 m6">
+        <div class="col-s12-m6">
       </div>
                        
     </div>
                   
-                   <div class="row" id="counterID" style="">
-        <div class="col s12 m12" style="">  
+                   <div class="row" id="counterID" style="transform-style: preserve-3d;
+            transform: perspective(200px);">
+        <div class="col s12 m12" id="counterdi" style="
+    transform-style: preserve-3d;
+            transform: perspective(200px); ">  
             <div class="center-align" style="border: 1px solid #10181e; border-radius: 8px; width: 75%; margin: 20px; ">
-<i style="color: #19dacb; margin: 20px;" class="  fa fa-users fa-3x"></i>
+<i style="color: #19dacb; margin: 20px;" class="fa fa-clock fa-3x"></i>
             <div class="counter counter1" style="    transition: 1.5s ease-in-out; 
-" st data-target="16000">0</div>
+" st data-target="1440">0</div>
       
-            <h5 class="tree" style="text-shadow: 2px 4px 20px rgba(255,255,255,0);">Minutes Ever Played</h5>
+            <h5 class="tree" style="text-shadow: 2px 4px 20px rgba(255,255,255,0);">Total Minutes Ever Played</h5>
      </div>  
 </div>
                        
-                       <div class="col s12 m12">
-            <div class="center-align" style="border: 1px solid #10181e; border-radius: 8px; width: 75%; margin: 20px;% ">
-<i style="color: #19dacb; margin: 20px;" class="fa fa-users fa-3x"></i>
-            <div class="counter counter1" style="    transition: 1.5s ease-in-out; 
-" st data-target="4000">0</div>
+                       <div class="col s12 m12" id="counterdi" style="transform-style: preserve-3d;
+            transform: perspective(200px); ">
+            <div class="center-align" style="border: 1px solid #10181e; border-radius: 8px; width: 75%; margin: 20px;">
+<i style="color: #19dacb; margin: 20px;" class=" fab fa-discord fa-3x"></i>
+            <div class="counter counter1" style="
+" st data-target="112">0</div>
       
-            <h5 class="tree" style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Minutes Ever Played</h5>
+            <h5 class="tree" style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Growing Discord Server</h5>
      </div>  
 
       </div>
-      </div>                   <div class="row" id="counterID" style="">
+      </div>                   <div class="row" id="counterID" style="transform-style: preserve-3d;
+            transform: perspective(200px);">
 
-                              <div class="col s12 m12 ">
+                              <div class="col s12 m12 " id="counterdi" style="transform-style: preserve-3d;
+            transform: perspective(200px); ">
             <div class="center-align" style="border: 1px solid #10181e; border-radius: 8px; width: 75%; margin: 20px; ">
 <i style="color: #19dacb; margin: 20px;" class="fa fa-users fa-3x"></i>
-            <div class="counter counter1" style="    transition: 1.5s ease-in-out; 
-" st data-target="12000">0</div>
+            <div class="counter counter1" style="    
+" st data-target="37">0</div>
       
-            <h5 class="tree" style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Minutes Ever Played</h5>
+            <h5 class="tree" style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Total Users Ever Played</h5>
      </div>  
 
       </div>
-          <div class="col s12 m12">
+          <div class="col s12 m12" id="counterdi" style="transform-style: preserve-3d;
+            transform: perspective(200px); ">
             <div class="center-align" style="border: 1px solid #10181e; border-radius: 8px; width: 75%; margin: 20px; ">
-<i style="color: #19dacb; margin: 20px;" class="fa fa-users fa-3x"></i>
-            <div class="counter counter1" style="    transition: 1.5s ease-in-out; 
-" st data-target="2000">0</div>
+<i style="color: #19dacb; margin: 20px;" class="fa fa-cow fa-3x"></i>
+            <div class="counter counter1" style="
+" st data-target="20">0</div>
       
-            <h5 class="tree" style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Minutes Ever Played</h5>
+            <h5 class="tree" style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Total New Mobs Added</h5>
      </div>  
 
       </div>
           </div>
-                                     <div class="row" id="counterID" style="">
+                                     <div class="row" id="counterID" style="transform-style: preserve-3d;
+            transform: perspective(200px);">
 
-                              <div class="col s12 m12">
+                              <div class="col s12 m12" id="counterdi" style="transform-style: preserve-3d;
+            transform: perspective(200px); ">
             <div class="center-align" style="border: 1px solid #10181e; border-radius: 8px;   width: 75%; margin: 20px;">
-<i style="color: #19dacb; margin: 20px;" class="fa fa-users fa-3x"></i>
-            <div class="counter counter1" style="    transition: 1.5s ease-in-out; 
-" st data-target="8000">0</div>
+<i style="color: #19dacb; margin: 20px;" class="fa fa-vote-yea fa-3x"></i>
+            <div class="counter counter1" style="
+" st data-target="80">0</div>
       
-            <h5 class="tree"  style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Minutes Ever Played</h5>
+            <h5 class="tree"  style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Total Votes Ever Casted</h5>
      </div>  
 
       </div>
-<div class="col s12 m12">
+<div class="col s12 m12" id="counterdi" style="transform-style: preserve-3d;
+            transform: perspective(200px); ">
             <div class="center-align" style="border: 1px solid #10181e; border-radius: 8px;   width: 75%; margin: 20px;">
-<i style="color: #19dacb; margin: 20px;" class="fa fa-users fa-3x"></i>
-            <div class="counter counter1" style="    transition: 1.5s ease-in-out; 
-" st data-target="1000">0</div>
+<i style="color: #19dacb; margin: 20px;" class="fa fa-eye fa-3x"></i>
+            <div class="counter counter1" style="    
+" st data-target="10">0</div>
       
-            <h5 class="tree"  style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Minutes Ever Played</h5>
+            <h5 class="tree"  style="text-shadow: 2px 4px 20px rgba(255,255,255,0)">Total New Bosses Added</h5>
      </div>  
 
       </div>
@@ -620,10 +703,10 @@ header h1 {
               
           
   <!-- Contact -->
-  <div class="contact" id="contact"  name="contact" style="background: url('../src/img/cityscape.jpg');
+  <div class="contact " id="contact"  name="contact" style="background: url('../src/img/cityscape.jpg');
 background-position: 50% 10%; background-attachment: fixed; width: 100vw; height: 100vh;">
     <div class="main">
-      <div class="card-panel" data-aos="fade-up" style=" background-color: rgba(255,255,255,0.1) !important; backdrop-filter: blur(8px) !important; ">
+      <div class="card " data-aos="fade-up" data-aos-once="true" style=" background-color: rgba(255,255,255,0.1) !important; backdrop-filter: blur(8px) !important;  width: 50%;">
         <h4 style="color: white;" class="center-align">Contact Us?</h4>
         <form class="col s12">
           <div class="row">
@@ -645,7 +728,7 @@ background-position: 50% 10%; background-attachment: fixed; width: 100vw; height
                 </div>
               </div>
               <div>
-                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect grey darken-4'>Submit</button>
+                <button type='submit' name='btn_login' class='col s12 btn btn-lg'>Submit</button>
               </div>
             </form>
           </div>
@@ -688,16 +771,54 @@ background-position: 50% 10%; background-attachment: fixed; width: 100vw; height
     </div>
   </footer>
   <!-- /Footer -->
-<script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.css"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 
   <!-- AOS INIT -->
+    <script>
+AOS.init({
+      duration: 1500,
+      easing: 'cubic-bezier(.01,.98,.52,.99)',
+      disable: $(device)
+    });        
+</script>
   <script>
-    AOS.init({
+
+if (!mobile){
+        function desktop() {
+            var device = desktop
+                AOS.init({
       duration: 1500,
       easing: 'ease-in-out',
-      // disable: 'mobile',
+      disable: $(device)
     });
+        }
+        document.getElementById('device').addEventListener('load', desktop);
+    }
+    else if (!desktop){  
+    function mobile() {
+            var device = mobile
+            AOS.init({
+      duration: 1500,
+      easing: 'ease-in-out',
+      disable: $(device)
+    });
+        }
+        document.getElementById('device').addEventListener('load', mobile);
+    }
+    else {
+              function device() {
+            var device = device
+                      AOS.init({
+      duration: 1500,
+      easing: 'ease-in-out',
+      disable: $(device)
+    });
+        }
+        document.getElementById('device').addEventListener('load', device);
+    }
+    }
+    
+
   </script>
 
   <!-- Mobile Nav INIT -->
@@ -844,7 +965,18 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
       </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script id="rendered-js" >
+VanillaTilt.init(document.querySelectorAll("#counterdi"), {
+    max: 25,
+        speed: 200,
+        easing:"cubic-bezier(.01,.98,.52,.99)",
+        perspective:2000,
+        transition:true
+    });
+    </script>
 </div>
+    
 </body>
 
 </html>
